@@ -5,19 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>URLCutter</title>
-    <link rel="stylesheet" href="./css/index.css" >
+    <link rel="stylesheet" href="./css/default.css" >
 </head>
-<body>
 
-    <header>
-        
+<body>     
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+
+    <header>        
+        <img src="./resources/imgs/logo.svg" alt="logo do site">
     </header>
 
     <main>
+
+        <h1>ENCURTE SEU LINK</h1>
+
         <form method="post" action="./src/controller.php">
-            <input type="text" name="url" />
+            <input type="text" name="url" placeholder="Digite um link"/>
             <button type="submit">Encurtar Link</button>
         </form>
-    </main>
+    </main>    
+
+    <footer>
+        
+        <figure>
+            <img src="./resources/imgs/akar-icons_github-fill.svg" alt="Logo do Github">
+            <a href="https://github.com/LiedsonRP/urlCutter"><figcaption>LiedsonRP</figcaption></a>
+        </figure>
+        <p>Projeto criado para treino</p>        
+        <figure>
+            <a href="https://www.instagram.com/liedson_rp/"><img src="./resources/imgs/ant-design_instagram-filled.svg" alt="Logo do instagram"></a>
+            <a href="mailto:liedsonreis2019@outlook.com?subject=Tenho um projeto"><img src="./resources/imgs/clarity_email-solid.svg" alt="icone de email"></a>
+        </figure>
+    </footer>
 </body>
 </html>

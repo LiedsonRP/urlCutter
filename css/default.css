@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Cataraman';
+    src: url('/resources/fonts/Catamaran-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Merriweather-Sans';
+    src: url('/resources/fonts/MerriweatherSans-VariableFont_wght.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-background-color: #FBF2F2;    
+    --footer-background-color: #FBF2F2;    
+    --input-background-color: #D9D9D9;
+
+    --button-background-color: #0DB8EE;
+    --button-hover-background-color: #0a4d61;
+    --title-text-color: #F3E9E9;
+}
+
+body {
+    background: linear-gradient(180deg, #141F88 29.17%, #200470 66.15%);;
+    height: 100vh;            
+    overflow-x: hidden;
+}
+
+#circle1 {
+    position: absolute;
+    left: -40%;    
+    border: black solid 100px;
+    
+    border-radius: 50%;
+    width: 80%;
+    height: 60%;
+}
+
+#circle2 {
+    position: absolute;
+    left: 58%;
+    bottom: 1%;
+    border: black solid 100px;
+    
+    border-radius: 50%;
+    width: 80%;
+    height: 60%;
+}
+
+header {
+    width: 100vw;
+    background-color: var(--header-background-color);
+    min-height: 10vh;        
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    position: relative;
+}
+
+main {
+    min-height: 60.56vh;
+    position: relative;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+main h1 {
+    font-family: 'Merriweather-Sans';
+    color: var(--title-text-color);
+    font-size: 1.813rem;
+    margin-bottom: 30px;
+}
+
+main form {    
+    display: flex;
+    flex-direction: column;    
+    align-items: center;   
+    min-height: 22vh;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+main form input {        
+    background-color: var(--input-background-color);
+    min-height: 53px;
+    min-width: 80%;    
+    text-indent: 20px;
+    border-radius: 100px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    font-family: 'Cataraman';
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+main form input:focus {
+    border: solid 0.3px var(--button-background-color);
+}
+
+main form button {
+    min-width: 45%;
+    min-height: 39px;
+    border-radius: 100px;
+    background-color: var(--button-background-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-family: 'Cataraman';
+    font-weight: 400;
+    font-size: 1.125rem;
+
+    transition: 0.3s ease-out;
+}
+
+main form button:hover {
+    background-color: var(--button-hover-background-color);
+    color: var(--title-text-color);
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--footer-background-color);    
+    min-height: 10vh;
+    padding-top: 12px;
+
+    font-family: 'Cataraman';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer figure {
+    margin: 5px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;    
+    width: 40%;        
+}
+
+footer figure a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 13px;
+}
